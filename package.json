@@ -1,0 +1,25 @@
+{
+  "name": "modern-entrepreneur",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:mobile": "npm run start --workspace=apps/mobile",
+    "build:web": "npm run build --workspace=apps/web"
+  },
+  "resolutions": {
+    "react": "19.1.0",
+    "react-native": "0.81.5"
+  },
+  "overrides": {
+  "react": "19.2.4",
+  "react-native": "0.81.5"
+},
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "packageManager": "npm@10.9.2"
+}
